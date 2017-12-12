@@ -4,13 +4,37 @@ html, body {
   height: 100%;
 }
 
+.nav-menu {
+  text-align: center;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.nav-menu {
+  background-color: white;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+}
+
+.icons {
+  color: white;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
+.active {
+  top: 225px;
+}
+
 .first-slide {
-  background-image: url(pexels-photo-260922.jpeg);
+  background-image: url(pictures/pexels-photo-260922.jpeg);
   width: auto;
   min-height: 100%;
-  background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -18,5 +42,5 @@ html, body {
   color: white;
   position: absolute;
   bottom: 25px;
-  right: 15px
+  right: 20px
 }
