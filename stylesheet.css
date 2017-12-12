@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.first-slide {
+  background: url(https://i.imgur.com/TFJyjiO.jpg);
+  background-size: cover;
+  width: auto;
+  min-height: 100%;
+}
+
+.slide-text {
+  position: absolute;
+}
