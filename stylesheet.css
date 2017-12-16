@@ -13,10 +13,11 @@ html, body {
   text-align: center;
   background-color: black;
   color: white;
-  height: 200px;
+  height: 250px;
   width: 100%;
   position: absolute;
-  top: -200px
+  z-index: 1;
+  top: -250px
 }
 
 .hide {
@@ -28,11 +29,14 @@ html, body {
   position: absolute;
   top: 25px;
   right: 20px;
-  transition: all 1s ease;
+}
+
+.icons.x {
+  transition: transform 1s ease;
 }
 
 .active {
-  transform: translateY(200px);
+  transform: translateY(250px);
 }
 
 .first-slide {

@@ -3,17 +3,15 @@ let iconButton = document.querySelectorAll('.icons');
 
 function toggleMenu() {
   if (iconButton[0].classList.contains('hide')) {
+    iconButton[1].classList.add('hide');
     iconButton[0].classList.remove('hide');
     iconButton[0].classList.add('active');
-    iconButton[1].classList.add('hide');
-    navMenu.classList.remove('hide');
     navMenu.classList.add('active');
   }
   else {
     iconButton[1].classList.remove('hide');
     iconButton[0].classList.add('hide');
     iconButton[0].classList.remove('active');
-    navMenu.classList.add('hide');
     navMenu.classList.remove('active');
   }
 }
