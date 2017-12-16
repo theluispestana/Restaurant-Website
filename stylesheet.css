@@ -9,14 +9,14 @@ html, body {
 }
 
 .nav-menu {
-  transition: all 1s;
+  transition: all 1s ease;
   text-align: center;
-  background-color: white;
+  background-color: black;
+  color: white;
   height: 200px;
   width: 100%;
   position: absolute;
   top: -200px
-
 }
 
 .hide {
@@ -28,7 +28,7 @@ html, body {
   position: absolute;
   top: 25px;
   right: 20px;
-  transition: all 1s;
+  transition: all 1s ease;
 }
 
 .active {
