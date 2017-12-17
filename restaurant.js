@@ -1,5 +1,6 @@
 let navMenu = document.querySelector('.nav-menu');
 let iconButton = document.querySelectorAll('.icons');
+let firstSlide = document.querySelector('.first-slide');
 
 function toggleMenu() {
   if (iconButton[0].classList.contains('hide')) {
@@ -16,6 +17,12 @@ function toggleMenu() {
   }
 }
 
+function slideShrink() {
+  firstSlide.classList.add('slide-shrink');
+}
+
 for (var i = 0; i < iconButton.length; i++) {
   iconButton[i].addEventListener('click', toggleMenu);
 }
+
+window.onload = slideShrink;

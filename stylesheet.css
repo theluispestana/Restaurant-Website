@@ -4,20 +4,38 @@ html, body {
   height: 100%;
 }
 
+span {
+  margin-right: 20px;
+}
+
 .nav-outer {
   overflow: hidden;
 }
 
 .nav-menu {
-  transition: all 1s ease;
-  text-align: center;
-  background-color: black;
+  background-color: #223A5E;
   color: white;
+  position: absolute;
+  transition: all 1s ease;
+  z-index: 1;
   height: 250px;
   width: 100%;
-  position: absolute;
-  z-index: 1;
   top: -250px
+}
+
+.nav-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  line-height: 200%;
+  height: 100%;
+  width: 100%;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
 }
 
 .hide {
@@ -44,7 +62,12 @@ html, body {
   width: auto;
   min-height: 100%;
   background-position: center;
-  background-size: cover;
+  background-size: auto 115%;
+  transition: background-size 1.8s ease;
+}
+
+.first-slide.slide-shrink {
+  background-size: auto 110%;
 }
 
 .slide-text {
