@@ -1,7 +1,9 @@
+let pageScroll;
 let navMenu = document.querySelector('.nav-menu');
 let iconButton = document.querySelectorAll('.icons');
 let firstSlide = document.querySelector('.first-slide');
-let pageScroll;
+let quoteText = document.querySelector('.quote-text');
+
 
 function toggleMenu() {
   if (iconButton[0].classList.contains('hide')) {
@@ -25,7 +27,7 @@ function slideShrink() {
 function slide() {
   pageScroll = window.scrollY
   if (pageScroll > 200) {
-    alert('success ' + scrollY);
+    quoteText.classList.add('text-rise');
   }
   else {
     return;

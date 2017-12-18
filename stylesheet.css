@@ -94,5 +94,10 @@ span {
 }
 
 .quote-text {
+  transition: all 2s ease;
   transform: translateY(30px);
+}
+
+.text-rise {
+  transform: translateY(0px);
 }
