@@ -1,6 +1,7 @@
 let navMenu = document.querySelector('.nav-menu');
 let iconButton = document.querySelectorAll('.icons');
 let firstSlide = document.querySelector('.first-slide');
+let pageScroll = firstSlide.scrollY;
 
 function toggleMenu() {
   if (iconButton[0].classList.contains('hide')) {
@@ -22,11 +23,17 @@ function slideShrink() {
 }
 
 function Slide() {
-  
+
 }
 
+if (firstSlide.scrollY > 200) {
+  console.log('it worked');
+}
+
+//adding event listener for load animation
+window.onload = slideShrink;
+
+//Adding event listeners to both buttons
 for (var i = 0; i < iconButton.length; i++) {
   iconButton[i].addEventListener('click', toggleMenu);
 }
-
-window.onload = slideShrink;

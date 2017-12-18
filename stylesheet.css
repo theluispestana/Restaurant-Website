@@ -84,6 +84,7 @@ span {
 
 .quote-box {
   background-color: #212733;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
