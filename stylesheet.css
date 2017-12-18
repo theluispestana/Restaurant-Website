@@ -4,6 +4,11 @@ html, body {
   height: 100%;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 span {
   margin-right: 20px;
 }
@@ -28,7 +33,7 @@ span {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  line-height: 200%;
+  line-height: 350%;
   height: 100%;
   width: 100%;
 }
@@ -75,4 +80,18 @@ span {
   position: absolute;
   bottom: 25px;
   right: 20px
+}
+
+.quote-box {
+  background-color: #212733;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 400px;
+  width: 100%;
+}
+
+.quote-text {
+  transform: translateY(30px);
 }

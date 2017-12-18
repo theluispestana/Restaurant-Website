@@ -21,6 +21,10 @@ function slideShrink() {
   firstSlide.classList.add('slide-shrink');
 }
 
+function Slide() {
+  
+}
+
 for (var i = 0; i < iconButton.length; i++) {
   iconButton[i].addEventListener('click', toggleMenu);
 }
