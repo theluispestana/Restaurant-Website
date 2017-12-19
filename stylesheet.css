@@ -101,3 +101,31 @@ span {
 .text-rise {
   transform: translateY(0px);
 }
+
+.about-container {
+  background-image: url(pictures/pexels-photo-262918.jpeg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  height: 900px;
+  width: 100%;
+}
+
+.about-box {
+  background-color: white;
+  float: right;
+  position: relative;
+  top: 450px;
+  right: 250px;
+  height: 600px;
+  width: 600px;
+}
+
+.about-text {
+  background-color: grey;
+  transform: translate(-50%, -20%);
+  position: relative;
+  left: 50%;
+  top: 20%;
+  width: 400px;
+}
