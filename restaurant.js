@@ -2,8 +2,11 @@ let pageScroll;
 let navMenu = document.querySelector('.nav-menu');
 let iconButton = document.querySelectorAll('.icons');
 let firstSlide = document.querySelector('.first-slide');
+let firstSlideHeight = firstSlide.offsetHeight;
 let quoteText = document.querySelector('.quote-text');
+let quoteBoxHeight = document.querySelector('.quote-box').offsetHeight;
 let aboutMe = document.querySelector('.about-box');
+let aboutHeight = document.querySelector('.about-container').offsetHeight;
 
 function toggleMenu() {
   if (iconButton[0].classList.contains('hide')) {
@@ -29,14 +32,17 @@ function slide() {
   if (pageScroll > 200) {
     quoteText.classList.add('text-rise');
   }
+  else if (pageScroll > (firstSlideHeight + quoteBoxHeight + (aboutHeight/2))) {
+    aboutMe.classList.add('about-active');
+  }
   else {
     return;
   }
 }
 
-window.addEventListener('click', function() {
-    aboutMe.classList.add('about-active');
-});
+// window.addEventListener('click', function() {
+//     aboutMe.classList.add('about-active');
+// });
 
 window.addEventListener('scroll', slide);
 
