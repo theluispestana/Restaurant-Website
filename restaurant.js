@@ -3,7 +3,7 @@ let navMenu = document.querySelector('.nav-menu');
 let iconButton = document.querySelectorAll('.icons');
 let firstSlide = document.querySelector('.first-slide');
 let quoteText = document.querySelector('.quote-text');
-
+let aboutMe = document.querySelector('.about-box');
 
 function toggleMenu() {
   if (iconButton[0].classList.contains('hide')) {
@@ -33,6 +33,10 @@ function slide() {
     return;
   }
 }
+
+window.addEventListener('click', function() {
+    aboutMe.classList.add('about-active');
+});
 
 window.addEventListener('scroll', slide);
 

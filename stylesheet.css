@@ -115,9 +115,10 @@ span {
   background-color: white;
   float: right;
   position: relative;
-  top: 450px;
+  transition: all 2s ease;
+  top: 400px;
   right: 250px;
-  height: 600px;
+  height: 650px;
   width: 600px;
 }
 
@@ -128,4 +129,8 @@ span {
   left: 50%;
   top: 20%;
   width: 400px;
+}
+
+.about-active {
+  transform: translateY(-100px);
 }
