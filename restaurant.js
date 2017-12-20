@@ -32,11 +32,9 @@ function slide() {
   if (pageScroll > 200) {
     quoteText.classList.add('text-rise');
   }
-  else if (pageScroll > (firstSlideHeight + quoteBoxHeight + (aboutHeight/2))) {
+
+  if (pageScroll > (firstSlideHeight)) {
     aboutMe.classList.add('about-active');
-  }
-  else {
-    return;
   }
 }
 
