@@ -136,14 +136,15 @@ span {
 }
 
 .image-container {
-  height: 400px;
+  height: 500px;
   width: 100%;
   font-size: 0;
   /* overflow: hidden; */
 }
 
 .images > img {
-  height: 200px;
+  object-fit: cover;
+  filter: grayscale(85%);
+  height: 250px;
   width: 25%;
-  margin: 0;
 }
