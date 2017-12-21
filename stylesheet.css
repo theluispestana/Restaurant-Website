@@ -134,3 +134,16 @@ span {
 .about-active {
   transform: translateY(-100px);
 }
+
+.image-container {
+  height: 400px;
+  width: 100%;
+  font-size: 0;
+  /* overflow: hidden; */
+}
+
+.images > img {
+  height: 200px;
+  width: 25%;
+  margin: 0;
+}
