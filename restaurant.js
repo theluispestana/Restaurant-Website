@@ -38,10 +38,6 @@ function slide() {
   }
 }
 
-// window.addEventListener('click', function() {
-//     aboutMe.classList.add('about-active');
-// });
-
 window.addEventListener('scroll', slide);
 
 //adding event listener for load animation
