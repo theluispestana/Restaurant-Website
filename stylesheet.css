@@ -142,9 +142,14 @@ span {
   /* overflow: hidden; */
 }
 
+.images {
+
+}
+
 .images > img {
+  filter: grayscale(90%);
+  transition: all .5s ease;
   object-fit: cover;
-  filter: grayscale(85%);
   height: 250px;
   width: 25%;
 }
