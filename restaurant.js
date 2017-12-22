@@ -38,10 +38,12 @@ function slide() {
   }
 }
 
+// these variables will be used by saturation, enlarge, and otherImage
+let attribute;
+let image;
+
 function  saturation() {
   if (event.type == 'mouseenter') {
-    let attribute;
-    let image;
     attribute = this.getAttribute('data-image');
     image = document.querySelector(`img[data-image="${attribute}"]`);
     image.style.filter = "grayscale(0%)";
@@ -53,10 +55,22 @@ function  saturation() {
   }
 }
 
+let fixed = document.querySelector('.enlarged-container');
 function enlarge() {
-  let fixed = document.querySelector('.enlarged-container').classList.remove('hide');
+  fixed.classList.remove('hide');
   document.getElementById('enlarged-image').src = this.getAttribute('src');
 }
+
+function closeEnlarge() {
+  fixed.classList.add('hide');
+}
+
+// function otherImage(attribute) {
+//   attribute++;
+//   image = document.querySelector(`img[data-image="${attribute}"]`).src;
+//   document.getElementById('enlarged-image').src = image;
+//   console.log(image);
+// }
 
 //Adding event listener for load animation
 window.onload = slideShrink;
@@ -75,3 +89,6 @@ for (var i = 0; i < images.length; i++) {
   //Event listener for enlarging image
   images[i].addEventListener('click', enlarge);
 }
+
+fixed.addEventListener('click', closeEnlarge);
+// document.getElementById('enlarged-image').addEventListener('click', otherImage(attribute));

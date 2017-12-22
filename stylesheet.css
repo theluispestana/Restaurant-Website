@@ -168,10 +168,10 @@ span {
 
 .enlarged-image > img {
   position: absolute;
-  object-fit: cover;
+  object-fit: contain;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: 500px;
-  width: 500px;
+  height: 800px;
+  width: 800px;
 }
