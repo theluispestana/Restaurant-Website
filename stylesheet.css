@@ -147,7 +147,7 @@ span {
 }
 
 .images > img {
-  filter: grayscale(90%);
+  filter: grayscale(95%);
   transition: all .75s ease;
   object-fit: cover;
   height: 250px;

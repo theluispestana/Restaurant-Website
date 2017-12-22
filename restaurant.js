@@ -1,6 +1,3 @@
-let pageScroll;
-let attribute;
-let image;
 let navMenu = document.querySelector('.nav-menu');
 let iconButton = document.querySelectorAll('.icons');
 let firstSlide = document.querySelector('.first-slide');
@@ -31,7 +28,7 @@ function slideShrink() {
 }
 
 function slide() {
-  pageScroll = window.scrollY
+  let pageScroll = window.scrollY
   if (pageScroll > 200) {
     quoteText.classList.add('text-rise');
   }
@@ -41,8 +38,10 @@ function slide() {
   }
 }
 
-function  saturation () {
+function  saturation() {
   if (event.type == 'mouseenter') {
+    let attribute;
+    let image;
     attribute = this.getAttribute('data-image');
     image = document.querySelector(`img[data-image="${attribute}"]`);
     image.style.filter = "grayscale(0%)";
@@ -52,6 +51,11 @@ function  saturation () {
     image = document.querySelector(`img[data-image="${attribute}"]`);
     image.style.filter = "grayscale(90%)";
   }
+}
+
+function enlarge() {
+  let fixed = document.querySelector('.enlarged-container').classList.remove('hide');
+  document.getElementById('enlarged-image').src = this.getAttribute('src');
 }
 
 //Adding event listener for load animation
@@ -65,6 +69,9 @@ for (var i = 0; i < iconButton.length; i++) {
 window.addEventListener('scroll', slide);
 
 for (var i = 0; i < images.length; i++) {
+  //Event listeners for saturation on hover
   images[i].addEventListener('mouseenter', saturation);
   images[i].addEventListener('mouseleave', saturation);
+  //Event listener for enlarging image
+  images[i].addEventListener('click', enlarge);
 }
