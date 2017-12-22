@@ -54,9 +54,7 @@ function  saturation () {
   }
 }
 
-// function  desaturate()
-
-//adding event listener for load animation
+//Adding event listener for load animation
 window.onload = slideShrink;
 
 //Adding event listeners to both buttons
