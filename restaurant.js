@@ -62,15 +62,19 @@ function enlarge() {
 }
 
 function closeEnlarge() {
-  fixed.classList.add('hide');
+  if (event.target.id == 'enlarged-image') {
+    attribute++;
+    image = document.querySelector(`img[data-image="${attribute}"]`).src;
+    document.getElementById('enlarged-image').src = image;
+  }
+  else {
+    fixed.classList.add('hide');
+  }
 }
 
-// function otherImage(attribute) {
-//   attribute++;
-//   image = document.querySelector(`img[data-image="${attribute}"]`).src;
-//   document.getElementById('enlarged-image').src = image;
-//   console.log(image);
-// }
+function otherImage(attribute) {
+  console.log(image);
+}
 
 //Adding event listener for load animation
 window.onload = slideShrink;
