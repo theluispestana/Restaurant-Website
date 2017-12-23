@@ -72,10 +72,6 @@ function closeEnlarge() {
   }
 }
 
-function otherImage(attribute) {
-  console.log(image);
-}
-
 //Adding event listener for load animation
 window.onload = slideShrink;
 
@@ -95,4 +91,3 @@ for (var i = 0; i < images.length; i++) {
 }
 
 fixed.addEventListener('click', closeEnlarge);
-// document.getElementById('enlarged-image').addEventListener('click', otherImage(attribute));
