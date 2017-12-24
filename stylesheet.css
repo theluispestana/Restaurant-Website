@@ -123,7 +123,6 @@ span {
 }
 
 .about-text {
-  background-color: grey;
   transform: translate(-50%, -20%);
   position: relative;
   left: 50%;
@@ -174,4 +173,18 @@ span {
   transform: translate(-50%, -50%);
   height: 650px;
   width: 650px;
+}
+
+.menu-container {
+  background-color: #212733;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 1075px;
+  width: 100%;
+
+}
+
+.menu {
+  text-align: center;
 }
