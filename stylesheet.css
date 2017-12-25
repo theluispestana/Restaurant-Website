@@ -188,3 +188,13 @@ span {
 .menu {
   text-align: center;
 }
+
+.foot-container {
+    height: 75px;
+    background-color: #191e27;
+}
+
+.foot-info {
+  transform: translateY(30px);
+  color: white;
+}
